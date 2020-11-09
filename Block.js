@@ -2,7 +2,7 @@ class Block{
     constructor(x,y,width,height){
         var options = {
             restitution: 0.4,
-            friction:0.1
+            friction:0.1,
         }
         this.body = Bodies.rectangle(x,y,width,height,options);
         this.width = width;
@@ -14,6 +14,7 @@ class Block{
         var pos = this.body.position;
         push();
         fill(228,75,125);
+        this.Visibility = this.Visibility-5;
         tint(225,this.Visibility);
         translate(pos.x,pos.y);
         rotate(angle);
