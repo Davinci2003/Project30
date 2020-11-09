@@ -14,6 +14,7 @@ class Block{
         var pos = this.body.position;
         push();
         fill(228,75,125);
+        tint(225,this.Visibility);
         translate(pos.x,pos.y);
         rotate(angle);
         rectMode(CENTER);
