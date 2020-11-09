@@ -13,14 +13,13 @@ class Block{
         var angle = this.body.angle;
         var pos = this.body.position;
         if(this.body.speed<3){
-        super.display();
+        rect(this.body.position.x, this.body.position.y,this.width, this.height) 
         }
         else{
           World.remove(world,this.body);
           push();
           this.Visibility = this.Visibility-5;
           tint(225,this.Visibility);
-          image(this.image,this.body.position.x,this.body.position.y,50,50);
           pop();
         }
       }  
